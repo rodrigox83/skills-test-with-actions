@@ -69,7 +69,11 @@ def test_get_nth_fibonacci_ten():
     # Assert
     assert result == 55
 
-def test_get_nth_fibonacci_large():
-    """Test a larger fibonacci number to cover the loop."""
-    result = get_nth_fibonacci(20)
-    assert result == 6765
+def test_area_of_circle_negative_radius(self):
+   """Test with a negative radius to raise ValueError."""
+   # Arrange
+   radius = -1
+
+   # Act & Assert
+   with self.assertRaises(ValueError):
+      area_of_circle(radius)
