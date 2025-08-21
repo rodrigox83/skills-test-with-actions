@@ -69,3 +69,7 @@ def test_get_nth_fibonacci_ten():
     # Assert
     assert result == 55
 
+def test_get_nth_fibonacci_large():
+    """Test a larger fibonacci number to cover the loop."""
+    result = get_nth_fibonacci(20)
+    assert result == 6765
